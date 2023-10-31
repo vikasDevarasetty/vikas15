@@ -16,8 +16,8 @@ class DumperLoad extends StatelessWidget{
           ),
           ),
         ),
-        body:  Padding(
-          padding: const EdgeInsets.fromLTRB(16, 16, 16, 16),
+        body:   Padding(
+          padding:const EdgeInsets.fromLTRB(60, 30,20, 30),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -28,7 +28,7 @@ class DumperLoad extends StatelessWidget{
                 child: Row(
                   children: [
                     SizedBox(
-                      child: Card(
+                        child: Card(
                         color: const Color.fromARGB(255, 255, 40, 0),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(20),
@@ -58,7 +58,7 @@ class DumperLoad extends StatelessWidget{
                                   ),
                                   child: const Padding(
                                     padding: EdgeInsets.all(10),
-                                    child: Text('11B',style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),),
+                                    child: Text('7B',style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),),
                                   ),
                                 ),
                                 const SizedBox(height: 50,),
@@ -77,6 +77,109 @@ class DumperLoad extends StatelessWidget{
                         ),
                       ),
                     ),
+                    const SizedBox(width:25),
+                    SizedBox(
+                        child: Card(
+                        color: const Color.fromARGB(255, 255, 255, 51),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20),
+                        ),
+                        elevation: 6,
+                        child: Container(
+                          width:220,
+                          height: 200,
+                          child:   Padding(
+                            padding: const  EdgeInsets.all(14),
+                            child: Column(
+                              children: [
+                                const SizedBox(height: 14),
+                                Container(
+                                  height: 50,
+                                  width: 100,
+                                  alignment: Alignment.center,
+                                  decoration: BoxDecoration(
+                                    color: const Color.fromRGBO(255, 239, 213, 1),
+                                    border: Border.all(color: Color.fromRGBO(255, 239, 213, 1)),
+                                    borderRadius: const  BorderRadius.only(
+                                      topRight: Radius.circular(40),
+                                      topLeft: Radius.circular(40),
+                                      bottomLeft: Radius.circular(40),
+                                      bottomRight: Radius.circular(40),
+                                    ),
+                                  ),
+                                  child: const Padding(
+                                    padding: EdgeInsets.all(10),
+                                    child: Text('3L',style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),),
+                                  ),
+                                ),
+                                const SizedBox(height: 50,),
+                                LinearPercentIndicator(
+                                  animation: true,
+                                  lineHeight: 40,
+                                  percent: 0.65,
+                                  progressColor: Colors.deepPurple,
+                                  backgroundColor: Colors.deepPurple.shade100,
+                                  barRadius: const Radius.circular(40),
+                                  center: const Text('56/80 Tons',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15),),
+                                ),
+                              ],
+                            ),
+                            ),
+                        ),
+                      ),
+                    ),
+                    const SizedBox(width:25),
+                    SizedBox(
+                        child: Card(
+                        color: const Color.fromARGB(255, 255, 255, 51),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20),
+                        ),
+                        elevation: 6,
+                        child: Container(
+                          width:220,
+                          height: 200,
+                          child:   Padding(
+                            padding: const  EdgeInsets.all(14),
+                            child: Column(
+                              children: [
+                                const SizedBox(height: 14),
+                                Container(
+                                  height: 50,
+                                  width: 100,
+                                  alignment: Alignment.center,
+                                  decoration: BoxDecoration(
+                                    color: const Color.fromRGBO(255, 239, 213, 1),
+                                    border: Border.all(color: Color.fromRGBO(255, 239, 213, 1)),
+                                    borderRadius: const  BorderRadius.only(
+                                      topRight: Radius.circular(40),
+                                      topLeft: Radius.circular(40),
+                                      bottomLeft: Radius.circular(40),
+                                      bottomRight: Radius.circular(40),
+                                    ),
+                                  ),
+                                  child: const Padding(
+                                    padding: EdgeInsets.all(10),
+                                    child: Text('10C',style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),),
+                                  ),
+                                ),
+                                const SizedBox(height: 50,),
+                                LinearPercentIndicator(
+                                  animation: true,
+                                  lineHeight: 40,
+                                  percent: 0.56,
+                                  progressColor: Colors.deepPurple,
+                                  backgroundColor: Colors.deepPurple.shade100,
+                                  barRadius: const Radius.circular(40),
+                                  center: const Text('48/80 Tons',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15),),
+                                ),
+                              ],
+                            ),
+                            ),
+                        ),
+                      ),
+                    ),
+                    const SizedBox(width:25),
                     SizedBox(
                       child: Card(
                         color: const Color.fromRGBO(50, 205, 50, 1),
@@ -108,7 +211,7 @@ class DumperLoad extends StatelessWidget{
                                   ),
                                   child: const Padding(
                                     padding: EdgeInsets.all(10),
-                                    child: Text('3F',style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),),
+                                    child: Text('27N',style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),),
                                   ),
                                 ),
                                 const SizedBox(height: 50,),
@@ -119,7 +222,7 @@ class DumperLoad extends StatelessWidget{
                                   progressColor: Colors.deepPurple,
                                   backgroundColor: Colors.deepPurple.shade100,
                                   barRadius: const Radius.circular(40),
-                                  center: const Text('30/90 Tons',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15),),
+                                  center: const Text('30/80 Tons',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15),),
                                 ),
                               ],
                             ),
@@ -127,6 +230,7 @@ class DumperLoad extends StatelessWidget{
                         ),
                       ),
                     ),
+                    const SizedBox(width:25),
                     SizedBox(
                     child: Card(
                       color: const Color.fromARGB(255, 255, 40, 0),
@@ -158,7 +262,7 @@ class DumperLoad extends StatelessWidget{
                                 ),
                                 child: const Padding(
                                   padding: EdgeInsets.all(10),
-                                  child: Text('2E',style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),),
+                                  child: Text('62A',style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),),
                                 ),
                               ),
                               const SizedBox(height: 50,),
@@ -169,7 +273,7 @@ class DumperLoad extends StatelessWidget{
                                 progressColor: Colors.deepPurple,
                                 backgroundColor: Colors.deepPurple.shade100,
                                 barRadius: const Radius.circular(40),
-                                center: const Text('100/100 Tons',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15),),
+                                center: const Text('80/80 Tons',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15),),
                               ),
                             ],
                           ),
@@ -180,6 +284,7 @@ class DumperLoad extends StatelessWidget{
                   ],
                 ),
               ),
+              const SizedBox(height: 30,),
               SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Row(
@@ -215,7 +320,7 @@ class DumperLoad extends StatelessWidget{
                                   ),
                                   child: const Padding(
                                     padding: EdgeInsets.all(10),
-                                    child: Text('7A',style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),),
+                                    child: Text('13D',style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),),
                                   ),
                                 ),
                                 const SizedBox(height: 50,),
@@ -226,7 +331,7 @@ class DumperLoad extends StatelessWidget{
                                   progressColor: Colors.deepPurple,
                                   backgroundColor: Colors.deepPurple.shade100,
                                   barRadius: const Radius.circular(40),
-                                  center: const Text('50/100 Tons',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15),),
+                                  center: const Text('40/80 Tons',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15),),
                                 ),
                               ],
                             ),
@@ -234,6 +339,7 @@ class DumperLoad extends StatelessWidget{
                         ),
                       ),
                     ),
+                    const SizedBox(width: 25,),
                     SizedBox(
                       child: Card(
                         color: const Color.fromARGB(255, 50, 205, 50),
@@ -265,7 +371,7 @@ class DumperLoad extends StatelessWidget{
                                   ),
                                   child: const Padding(
                                     padding: EdgeInsets.all(10),
-                                    child: Text('6C',style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),),
+                                    child: Text('5M',style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),),
                                   ),
                                 ),
                                 const SizedBox(height: 50,),
@@ -276,7 +382,7 @@ class DumperLoad extends StatelessWidget{
                                   progressColor: Colors.deepPurple,
                                   backgroundColor: Colors.deepPurple.shade100,
                                   barRadius: const Radius.circular(40),
-                                  center: const Text('10/90 Tons',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15),),
+                                  center: const Text('10/80 Tons',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15),),
                                 ),
                               ],
                             ),
@@ -284,6 +390,7 @@ class DumperLoad extends StatelessWidget{
                         ),
                       ),
                     ),
+                    const SizedBox(width: 25,),
                     SizedBox(
                     child: Card(
                       color: const Color.fromARGB(255, 255, 40, 0),
@@ -315,7 +422,7 @@ class DumperLoad extends StatelessWidget{
                                 ),
                                 child: const Padding(
                                   padding: EdgeInsets.all(10),
-                                  child: Text('9D',style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),),
+                                  child: Text('1S',style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),),
                                 ),
                               ),
                               const SizedBox(height: 50,),
@@ -333,7 +440,109 @@ class DumperLoad extends StatelessWidget{
                           ),
                       ),
                     ),
-                  )
+                  ),
+                  const SizedBox(width: 25,),
+                    SizedBox(
+                    child: Card(
+                      color: const Color.fromARGB(255, 255, 255, 51),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      elevation: 6,
+                      child: Container(
+                        width:220,
+                        height: 200,
+                        child:   Padding(
+                          padding: const  EdgeInsets.all(14),
+                          child: Column(
+                            children: [
+                              const SizedBox(height: 14),
+                              Container(
+                                height: 50,
+                                width: 100,
+                                alignment: Alignment.center,
+                                decoration: BoxDecoration(
+                                  color: const Color.fromRGBO(255, 239, 213, 1),
+                                  border: Border.all(color: Color.fromRGBO(255, 239, 213, 1)),
+                                  borderRadius: const  BorderRadius.only(
+                                    topRight: Radius.circular(40),
+                                    topLeft: Radius.circular(40),
+                                    bottomLeft: Radius.circular(40),
+                                    bottomRight: Radius.circular(40),
+                                  ),
+                                ),
+                                child: const Padding(
+                                  padding: EdgeInsets.all(10),
+                                  child: Text('25N',style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),),
+                                ),
+                              ),
+                              const SizedBox(height: 50,),
+                              LinearPercentIndicator(
+                                animation: true,
+                                lineHeight: 40,
+                                percent: 0.75,
+                                progressColor: Colors.deepPurple,
+                                backgroundColor: Colors.deepPurple.shade100,
+                                barRadius: const Radius.circular(40),
+                                center: const Text('62/80 Tons',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15),),
+                              ),
+                            ],
+                          ),
+                          ),
+                      ),
+                    ),
+                  ),
+                  const SizedBox(width: 25,),
+                    SizedBox(
+                    child: Card(
+                      color: const Color.fromARGB(255, 255, 40, 0),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      elevation: 6,
+                      child: Container(
+                        width:220,
+                        height: 200,
+                        child:   Padding(
+                          padding: const  EdgeInsets.all(14),
+                          child: Column(
+                            children: [
+                              const SizedBox(height: 14),
+                              Container(
+                                height: 50,
+                                width: 100,
+                                alignment: Alignment.center,
+                                decoration: BoxDecoration(
+                                  color: const Color.fromRGBO(255, 239, 213, 1),
+                                  border: Border.all(color: Color.fromRGBO(255, 239, 213, 1)),
+                                  borderRadius: const  BorderRadius.only(
+                                    topRight: Radius.circular(40),
+                                    topLeft: Radius.circular(40),
+                                    bottomLeft: Radius.circular(40),
+                                    bottomRight: Radius.circular(40),
+                                  ),
+                                ),
+                                child: const Padding(
+                                  padding: EdgeInsets.all(10),
+                                  child: Text('31P',style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),),
+                                ),
+                              ),
+                              const SizedBox(height: 50,),
+                              LinearPercentIndicator(
+                                animation: true,
+                                lineHeight: 40,
+                                percent: 0.85,
+                                progressColor: Colors.deepPurple,
+                                backgroundColor: Colors.deepPurple.shade100,
+                                barRadius: const Radius.circular(40),
+                                center: const Text('72/80 Tons',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15),),
+                              ),
+                            ],
+                          ),
+                          ),
+                      ),
+                    ),
+                  ),
                   ],
                 ),
               ),
